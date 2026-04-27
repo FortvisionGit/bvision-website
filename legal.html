@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal Policies — BVision.AI</title>
+  <meta name="description" content="BVision.AI legal policies including MSA, SLA, DPA, AUP, and addenda." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23050505'/><circle cx='16' cy='16' r='6' fill='none' stroke='white' stroke-width='2'/><circle cx='16' cy='16' r='2.5' fill='white'/></svg>" />
+  <style>
+    /* Legal page specific styles */
+    .legal-layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 64px;
+      align-items: start;
+      padding-top: 48px;
+    }
+    .legal-sidebar {
+      position: sticky;
+      top: 96px;
+    }
+    .legal-nav-title {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-2);
+      margin-bottom: 16px;
+    }
+    .legal-nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .legal-nav-links a {
+      display: block;
+      padding: 9px 12px;
+      font-size: 0.875rem;
+      color: var(--text-2);
+      border-radius: 6px;
+      transition: all 0.15s;
+      line-height: 1.4;
+    }
+    .legal-nav-links a:hover,
+    .legal-nav-links a.active {
+      background: var(--bg);
+      color: var(--black);
+    }
+    .legal-doc {
+      padding-top: 64px;
+      border-top: 1px solid var(--border);
+      margin-top: 64px;
+    }
+    .legal-doc:first-child {
+      padding-top: 0;
+      border-top: none;
+      margin-top: 0;
+    }
+    .legal-doc-header {
+      margin-bottom: 32px;
+    }
+    .legal-doc-tag {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-2);
+      margin-bottom: 10px;
+    }
+    .legal-doc-date {
+      font-size: 0.8rem;
+      color: var(--text-2);
+      margin-top: 8px;
+    }
+    .legal-body h3 {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: var(--text-1);
+      letter-spacing: -0.02em;
+      margin: 28px 0 10px;
+    }
+    .legal-body h4 {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-1);
+      margin: 20px 0 8px;
+      letter-spacing: -0.01em;
+    }
+    .legal-body p {
+      font-size: 0.9rem;
+      color: var(--text-2);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .legal-body ul {
+      padding-left: 20px;
+      margin-bottom: 14px;
+      list-style: disc;
+    }
+    .legal-body ul li {
+      font-size: 0.875rem;
+      color: var(--text-2);
+      line-height: 1.7;
+      margin-bottom: 6px;
+    }
+    .legal-body a {
+      color: var(--text-1);
+      text-decoration: underline;
+    }
+    .legal-body strong {
+      color: var(--text-1);
+      font-weight: 500;
+    }
+    .legal-hub-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 32px 0;
+    }
+    .legal-hub-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 20px 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      text-decoration: none;
+      transition: border-color 0.15s;
+      cursor: pointer;
+    }
+    .legal-hub-card:hover { border-color: #a0a0a0; }
+    .legal-hub-card-title {
+      font-family: var(--font-display);
+      font-size: 0.9375rem;
+      font-weight: 300;
+      color: var(--text-1);
+      letter-spacing: -0.02em;
+    }
+    .legal-hub-card-abbr {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-2);
+      margin-bottom: 4px;
+    }
+    .legal-hub-card-arrow {
+      font-size: 1rem;
+      color: var(--text-2);
+      flex-shrink: 0;
+      transition: transform 0.15s;
+    }
+    .legal-hub-card:hover .legal-hub-card-arrow { transform: translateX(3px); }
+    @media(max-width:768px){
+      .legal-layout { grid-template-columns: 1fr; }
+      .legal-sidebar { position: static; }
+      .legal-hub-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="announce-bar">
+  <strong>BVision.AI powers enterprise AI transformation</strong>
+  <a href="case-studies.html">See case studies &rarr;</a>
+</div>
+
+<nav class="nav on-light">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-wordmark">bvision.ai</a>
+    <ul class="nav-links">
+      <li><a href="platform.html">Platform</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="industries.html">Industries</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
+    </ul>
+    <div class="nav-cta"><a href="contact.html" class="nav-get-in-touch">Get in touch</a></div>
+    <div class="nav-hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <span class="mobile-menu-close">&#x2715;</span>
+  <a href="index.html">Home</a>
+  <a href="platform.html">Platform</a>
+  <a href="solutions.html">Solutions</a>
+  <a href="industries.html">Industries</a>
+  <a href="case-studies.html">Case Studies</a>
+  <a href="contact.html" class="mobile-menu-cta">Get in touch</a>
+</div>
+
+
+<!-- ══ PAGE HEADER ════════════════════════════════════════════ -->
+<div style="padding-top: 120px; padding-bottom: 40px; border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <p class="section-eyebrow" style="margin-bottom: 12px;">Legal</p>
+    <h1 class="t-h1" style="color: var(--text-1); margin-bottom: 16px;">BVision.AI legal</h1>
+    <p class="t-body" style="color: var(--text-2); max-width: 520px;">
+      We are committed to the highest standards of transparency, security, and ethical responsibility. All policies governing the BVision.AI platform and services are detailed below.
+    </p>
+  </div>
+</div>
+
+
+<!-- ══ HUB OVERVIEW ══════════════════════════════════════════ -->
+<section style="padding: 48px 0; background: var(--bg); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <p class="legal-nav-title" style="margin-bottom: 20px;">Legal policies</p>
+    <div class="legal-hub-grid">
+      <a class="legal-hub-card" href="#msa">
+        <div>
+          <div class="legal-hub-card-abbr">MSA</div>
+          <div class="legal-hub-card-title">Master Service Agreement</div>
+        </div>
+        <span class="legal-hub-card-arrow">&rarr;</span>
+      </a>
+      <a class="legal-hub-card" href="#sla">
+        <div>
+          <div class="legal-hub-card-abbr">SLA</div>
+          <div class="legal-hub-card-title">Service Level Agreement</div>
+        </div>
+        <span class="legal-hub-card-arrow">&rarr;</span>
+      </a>
+      <a class="legal-hub-card" href="#dpa">
+        <div>
+          <div class="legal-hub-card-abbr">DPA</div>
+          <div class="legal-hub-card-title">Data Processing Agreement</div>
+        </div>
+        <span class="legal-hub-card-arrow">&rarr;</span>
+      </a>
+      <a class="legal-hub-card" href="#aup">
+        <div>
+          <div class="legal-hub-card-abbr">AUP</div>
+          <div class="legal-hub-card-title">Acceptable Use Policy</div>
+        </div>
+        <span class="legal-hub-card-arrow">&rarr;</span>
+      </a>
+      <a class="legal-hub-card" href="#dora">
+        <div>
+          <div class="legal-hub-card-abbr">DORA</div>
+          <div class="legal-hub-card-title">Financial Services Industry Addendum</div>
+        </div>
+        <span class="legal-hub-card-arrow">&rarr;</span>
+      </a>
+      <a class="legal-hub-card" href="privacy.html">
+        <div>
+          <div class="legal-hub-card-abbr">Privacy</div>
+          <div class="legal-hub-card-title">Website Privacy Policy</div>
+        </div>
+        <span class="legal-hub-card-arrow">&rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ DOCUMENTS ══════════════════════════════════════════════ -->
+<section style="padding: 64px 0 120px;">
+  <div class="container">
+    <div class="legal-layout">
+
+      <!-- Sticky sidebar -->
+      <aside class="legal-sidebar">
+        <p class="legal-nav-title">On this page</p>
+        <nav class="legal-nav-links">
+          <a href="#msa">Master Service Agreement</a>
+          <a href="#sla">Service Level Agreement</a>
+          <a href="#dpa">Data Processing Agreement</a>
+          <a href="#aup">Acceptable Use Policy</a>
+          <a href="#dora">DORA Addendum</a>
+          <a href="privacy.html">Privacy Policy &rarr;</a>
+        </nav>
+        <div style="margin-top: 32px; padding: 16px; background: var(--bg); border-radius: var(--radius-sm); border: 1px solid var(--border);">
+          <p style="font-size: 0.75rem; color: var(--text-2); line-height: 1.6;">Questions about these policies?</p>
+          <a href="mailto:legal@bvision.ai" style="font-size: 0.75rem; font-weight: 500; color: var(--text-1); text-decoration: underline; display: block; margin-top: 6px;">legal@bvision.ai</a>
+        </div>
+      </aside>
+
+      <!-- Document content -->
+      <div>
+
+        <!-- ── MSA ───────────────────────────────────────────── -->
+        <div class="legal-doc" id="msa">
+          <div class="legal-doc-header">
+            <div class="legal-doc-tag">MSA</div>
+            <h2 class="t-h2" style="color: var(--text-1);">Master Service Agreement</h2>
+            <p class="legal-doc-date">Last updated: February 12, 2026</p>
+          </div>
+          <div class="legal-body">
+            <p>This Master Service Agreement ("<strong>MSA</strong>") together with all exhibits and references incorporated herein, including without limitations, the Data Processing Agreement ("<strong>DPA</strong>"), the Service Level Agreement ("<strong>SLA</strong>"), and any applicable exhibits (all collectively defined herein as the "<strong>Agreement</strong>"), forms a legally binding and enforceable agreement by and between BVision.AI ("<strong>BVision</strong>") and Customer, as detailed in the Order Form. This Agreement is effective as of the date the Customer accepts and signs the Order Form ("<strong>Effective Date</strong>").</p>
+
+            <h3>1. Access and Use of the Services</h3>
+            <p>During the Term, and for Customer's internal business purposes, BVision.AI hereby grants Customer a non-exclusive, non-transferable, non-sublicensable, and limited license to: (i) access and use the Platform and configure, design, build and monitor AI Agents; (ii) use the AI Agent; (iii) add or remove Authorized Users; (iv) view usage reports and monitoring data; and (v) access support resources and Documentation.</p>
+            <p>Customer is responsible for all activities conducted under its Account and shall ensure that Account information is accurate, updated, and complete. Customer must promptly notify BVision.AI of any unauthorized use or suspected security breach at <a href="mailto:security@bvision.ai">security@bvision.ai</a>.</p>
+            <p>Customer agrees to use the Services solely in accordance with this Agreement, Documentation, and all applicable laws. Customer shall not: (i) copy, modify, or create derivative works of the Services; (ii) reverse engineer the source code or Services; (iii) use the Services in a manner that infringes third-party rights or applicable laws; (iv) transmit harmful, unlawful, or abusive content; (v) use or access the Services from an embargoed nation; or (vi) interfere with or disrupt the integrity or performance of the Services.</p>
+
+            <h3>2. Customer Responsibilities</h3>
+            <p>Customer shall be responsible for: (i) ensuring the accuracy, quality, integrity, and legality of Customer Data and that it does not infringe third-party rights; (ii) providing any technical data or information reasonably required by BVision.AI to deliver the Services; (iii) ensuring that its use of AI Agents complies with applicable regulations, including obtaining all necessary consents or providing required disclosures to End Users as required by applicable law; and (iv) procuring and maintaining all equipment and ancillary services necessary to access and use the Services.</p>
+
+            <h3>3. Representations and Warranties</h3>
+            <p>Each party represents and warrants that: (i) it has the full legal power and authority to enter into and perform its obligations under this Agreement; and (ii) the execution and performance of this Agreement does not and will not conflict with or violate any other agreement, law, or obligation by which it is bound.</p>
+            <p>BVision.AI further represents and warrants that: (i) the Services will materially conform to the specifications set forth in the applicable Order Form and SLA; (ii) it shall perform the Services in a professional manner in accordance with industry standards; and (iii) it has implemented and will maintain appropriate monitoring and quality assurance procedures.</p>
+            <p>EXCEPT FOR THE EXPRESS WARRANTIES SET FORTH IN THIS AGREEMENT, ALL SERVICES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT ANY WARRANTY WHATSOEVER. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, BVISION.AI EXPRESSLY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, OR STATUTORY.</p>
+
+            <h3>4. Intellectual Property Rights</h3>
+            <p>As between the parties, BVision.AI owns and retains all right, title, and interest in and to the Platform, AI Agent, Documentation, and any derivative works thereof, know-how, trade secrets, and related Intellectual Property Rights ("<strong>BVision IP</strong>"). Except for the limited rights expressly granted to Customer under this Agreement, no rights in or to the BVision IP are granted, assigned, or transferred to Customer.</p>
+            <p>As between the parties, Customer owns and retains all right, title, and interest in and to the Customer Data, Inputs and Outputs ("<strong>Customer IP</strong>"). Nothing in this Agreement transfers any ownership rights in Customer IP to BVision.AI, except for the limited license granted herein.</p>
+
+            <h3>5. Payments</h3>
+            <p>The Service operates on a subscription-based annual fee model, minimum fixed commitments, a credit-based usage model, or a combination of the above, as agreed in the applicable Order Form. Subscription fees are annual and fixed for the applicable subscription term.</p>
+            <p>Except as expressly provided in the Agreement or as required by applicable law, all subscription and/or credit purchases are final and non-refundable, non-cancellable, regardless of whether the Service was used.</p>
+
+            <h3>6. Term and Termination</h3>
+            <p>This Agreement commences on the Effective Date and continues until terminated in accordance with its terms. Either party may terminate this Agreement for cause upon thirty (30) days' written notice if the other party materially breaches this Agreement and fails to cure such breach within the notice period.</p>
+            <p>Upon termination: (i) all rights granted to Customer under this Agreement will immediately cease; (ii) Customer shall immediately cease using the Services; and (iii) Customer may request export of Customer Data within thirty (30) days of termination, after which BVision.AI may delete all Customer Data in accordance with its data retention policy.</p>
+
+            <h3>7. Confidentiality</h3>
+            <p>Each party ("<strong>Receiving Party</strong>") agrees to hold in strict confidence all Confidential Information of the other party ("<strong>Disclosing Party</strong>") using no less than the same degree of care used to protect its own Confidential Information (but in no event less than reasonable care). Neither party shall use the other's Confidential Information except to exercise its rights and fulfill its obligations under this Agreement.</p>
+
+            <h3>8. Limitation of Liability</h3>
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT WILL EITHER PARTY BE LIABLE TO THE OTHER PARTY FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES, INCLUDING LOSS OF PROFITS, LOSS OF BUSINESS, OR LOSS OF DATA, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+            <p>EACH PARTY'S TOTAL CUMULATIVE LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT SHALL NOT EXCEED THE TOTAL FEES PAID OR PAYABLE BY CUSTOMER TO BVISION.AI IN THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE CLAIM.</p>
+
+            <h3>9. Governing Law</h3>
+            <p>This Agreement shall be governed by and construed in accordance with the laws of the State of Delaware, United States, without regard to its conflict of law provisions. Any disputes arising under this Agreement shall be subject to the exclusive jurisdiction of the courts of Delaware.</p>
+
+            <h3>10. Contact</h3>
+            <p>For questions regarding this Agreement, please contact BVision.AI at <a href="mailto:legal@bvision.ai">legal@bvision.ai</a>.</p>
+          </div>
+        </div>
+
+
+        <!-- ── SLA ───────────────────────────────────────────── -->
+        <div class="legal-doc" id="sla">
+          <div class="legal-doc-header">
+            <div class="legal-doc-tag">SLA</div>
+            <h2 class="t-h2" style="color: var(--text-1);">Service Level Agreement</h2>
+            <p class="legal-doc-date">Last updated: February 12, 2026</p>
+          </div>
+          <div class="legal-body">
+            <p>This Service Level Agreement ("<strong>SLA</strong>") is incorporated by reference into the Master Service Agreement and defines the service availability, performance standards, and support commitments BVision.AI provides to customers.</p>
+
+            <h3>1. Availability Commitment</h3>
+            <p>BVision.AI will use commercially reasonable efforts to make the Platform available with an uptime of at least <strong>99.9%</strong> in any given calendar month, excluding scheduled maintenance and events outside BVision.AI's reasonable control.</p>
+            <p><strong>Uptime Calculation:</strong> Monthly Uptime % = ((Total minutes in month − Downtime minutes) / Total minutes in month) × 100</p>
+
+            <h3>2. Support Tiers</h3>
+            <h4>Standard Support</h4>
+            <ul>
+              <li>Email support: Response within 1 business day</li>
+              <li>Access to documentation and knowledge base</li>
+              <li>Platform status page and incident notifications</li>
+            </ul>
+            <h4>Priority Support</h4>
+            <ul>
+              <li>Email and Slack: Response within 4 business hours</li>
+              <li>Dedicated customer success manager</li>
+              <li>Quarterly business reviews</li>
+              <li>Access to beta features</li>
+            </ul>
+            <h4>Premium Support</h4>
+            <ul>
+              <li>24/7 emergency response for critical incidents</li>
+              <li>Response within 1 hour for P1 incidents</li>
+              <li>Dedicated technical account manager</li>
+              <li>Custom SLA terms available on request</li>
+            </ul>
+
+            <h3>3. Incident Classification</h3>
+            <p><strong>P1 — Critical:</strong> Complete loss of Service or a core feature rendering the Service unusable. Response: 1 hour. Resolution target: 4 hours.</p>
+            <p><strong>P2 — High:</strong> Significant degradation of a key feature. Service partially usable. Response: 4 business hours. Resolution target: 1 business day.</p>
+            <p><strong>P3 — Medium:</strong> Minor feature degradation with an available workaround. Response: 1 business day. Resolution target: 5 business days.</p>
+            <p><strong>P4 — Low:</strong> General inquiries, feature requests, cosmetic issues. Response: 2 business days.</p>
+
+            <h3>4. Scheduled Maintenance</h3>
+            <p>BVision.AI will provide at least 72 hours advance notice for scheduled maintenance windows. Emergency maintenance may be performed with shorter notice when required for security or data integrity. Scheduled maintenance does not count toward downtime calculations.</p>
+
+            <h3>5. Service Credits</h3>
+            <p>If monthly uptime falls below 99.9%, Customer is eligible for service credits as follows:</p>
+            <ul>
+              <li>99.0% – 99.9%: 10% of monthly fee credited</li>
+              <li>95.0% – 98.9%: 25% of monthly fee credited</li>
+              <li>Below 95.0%: 50% of monthly fee credited</li>
+            </ul>
+            <p>Service credits are Customer's sole and exclusive remedy for any failure by BVision.AI to meet the Availability Commitment.</p>
+
+            <h3>6. Exclusions</h3>
+            <p>The SLA does not apply to: (i) issues caused by Customer's acts or omissions; (ii) third-party services or software not provided by BVision.AI; (iii) network or connectivity issues outside BVision.AI's infrastructure; (iv) events of force majeure; or (v) Beta Services.</p>
+          </div>
+        </div>
+
+
+        <!-- ── DPA ───────────────────────────────────────────── -->
+        <div class="legal-doc" id="dpa">
+          <div class="legal-doc-header">
+            <div class="legal-doc-tag">DPA</div>
+            <h2 class="t-h2" style="color: var(--text-1);">Data Processing Agreement</h2>
+            <p class="legal-doc-date">Last updated: February 12, 2026</p>
+          </div>
+          <div class="legal-body">
+            <p>This Data Processing Agreement ("<strong>DPA</strong>") is entered into between BVision.AI ("<strong>Processor</strong>") and the Customer ("<strong>Controller</strong>") and is incorporated into and forms part of the Master Service Agreement.</p>
+
+            <h3>1. Definitions</h3>
+            <p>"<strong>Personal Data</strong>" means any information relating to an identified or identifiable natural person, as defined under applicable Data Protection Law. "<strong>Processing</strong>" means any operation performed on Personal Data, including collection, storage, use, disclosure, or deletion. "<strong>Data Protection Law</strong>" means GDPR, CCPA, and any other applicable data protection or privacy legislation.</p>
+
+            <h3>2. Processing Instructions</h3>
+            <p>BVision.AI shall process Personal Data only on documented instructions from the Controller, unless required by applicable law to process without such instructions. BVision.AI shall promptly inform the Controller if it believes any instruction would violate applicable Data Protection Law.</p>
+
+            <h3>3. Security Measures</h3>
+            <p>BVision.AI implements and maintains appropriate technical and organizational security measures to protect Personal Data against accidental or unlawful destruction, loss, alteration, unauthorized disclosure, or access. These measures include, but are not limited to:</p>
+            <ul>
+              <li>AES-256 encryption of Personal Data at rest</li>
+              <li>TLS 1.3 encryption for data in transit</li>
+              <li>Role-based access controls and least-privilege principles</li>
+              <li>Multi-factor authentication for all internal access</li>
+              <li>Regular penetration testing and security audits (SOC 2 Type II)</li>
+              <li>Continuous monitoring and anomaly detection</li>
+              <li>Automated PII detection and redaction capabilities</li>
+            </ul>
+
+            <h3>4. Sub-processors</h3>
+            <p>BVision.AI maintains an updated list of sub-processors authorized to process Personal Data on its behalf. BVision.AI provides at least 30 days' advance notice of any intended changes to sub-processors and shall impose data protection obligations substantially equivalent to this DPA on all sub-processors.</p>
+
+            <h3>5. Data Subject Rights</h3>
+            <p>Taking into account the nature of the processing, BVision.AI shall assist the Controller with appropriate technical and organizational measures to fulfill the Controller's obligation to respond to requests to exercise Data Subject rights under applicable Data Protection Law, including rights of access, rectification, erasure, portability, and objection.</p>
+
+            <h3>6. Data Breach Notification</h3>
+            <p>BVision.AI shall notify the Controller without undue delay, and in any event within 48 hours, after becoming aware of a Personal Data breach. Such notification shall include: (i) a description of the nature of the breach; (ii) categories and approximate number of data subjects affected; (iii) likely consequences; and (iv) measures taken or proposed to address the breach.</p>
+
+            <h3>7. Data Retention and Deletion</h3>
+            <p>Upon termination of the MSA or upon Controller's written request, BVision.AI shall delete or return all Personal Data within 30 days, unless applicable law requires continued retention. BVision.AI shall certify in writing that deletion has been completed.</p>
+
+            <h3>8. International Data Transfers</h3>
+            <p>Transfers of Personal Data from the EEA or UK to jurisdictions not recognized as providing adequate protection shall be made pursuant to the EU Standard Contractual Clauses (SCCs) or the UK's International Data Transfer Addendum, as applicable.</p>
+
+            <h3>9. Audits</h3>
+            <p>BVision.AI shall make available to the Controller all information necessary to demonstrate compliance with this DPA and shall allow for and contribute to audits and inspections conducted by the Controller or its authorized auditor, no more than once per year and upon 30 days' prior written notice.</p>
+          </div>
+        </div>
+
+
+        <!-- ── AUP ───────────────────────────────────────────── -->
+        <div class="legal-doc" id="aup">
+          <div class="legal-doc-header">
+            <div class="legal-doc-tag">AUP</div>
+            <h2 class="t-h2" style="color: var(--text-1);">Acceptable Use Policy</h2>
+            <p class="legal-doc-date">Last updated: February 12, 2026</p>
+          </div>
+          <div class="legal-body">
+            <p>This Acceptable Use Policy ("<strong>AUP</strong>") governs the use of the BVision.AI platform and services. By using the Services, you agree to comply with this AUP and our broader commitment to responsible, ethical AI deployment.</p>
+
+            <h3>1. Permitted Use</h3>
+            <p>The Services are intended for legitimate business workflows including customer support, operations, finance, HR, legal, procurement, and IT automation. Use must be in compliance with all applicable laws and regulations, including those governing AI systems, data protection, telecommunications, and employment.</p>
+
+            <h3>2. Prohibited Activities</h3>
+            <p>You may not use the Services to:</p>
+            <ul>
+              <li>Generate, store, transmit, or display content that is unlawful, defamatory, harassing, threatening, abusive, or obscene</li>
+              <li>Impersonate any person, organization, or entity without explicit authorization</li>
+              <li>Process data of individuals who have not provided required consents under applicable law</li>
+              <li>Engage in unauthorized data collection, surveillance, or tracking</li>
+              <li>Distribute malware, viruses, spam, or other harmful computer code</li>
+              <li>Infringe the intellectual property rights of any third party</li>
+              <li>Process children's personal data in violation of COPPA or equivalent local laws</li>
+              <li>Create or deploy AI agents that make fully autonomous decisions in high-risk domains (medical diagnosis, criminal justice, credit scoring) without appropriate human oversight</li>
+              <li>Develop competing AI foundation models or services using data from the BVision.AI platform</li>
+              <li>Circumvent, disable, or interfere with any security feature of the Services</li>
+              <li>Use the Services from an embargoed country or for sanctioned parties</li>
+            </ul>
+
+            <h3>3. AI-Specific Obligations</h3>
+            <p>Customers deploying AI Agents must: (i) ensure End Users are informed they are interacting with an AI system where required by applicable law; (ii) maintain human oversight for high-stakes decisions; (iii) not deploy AI Agents to discriminate against protected classes; (iv) ensure AI Agent outputs are reviewed when used in regulated contexts; and (v) comply with all applicable AI governance regulations, including the EU AI Act where applicable.</p>
+
+            <h3>4. Reporting Violations</h3>
+            <p>If you become aware of any violation of this AUP by any party, please report it to <a href="mailto:trust@bvision.ai">trust@bvision.ai</a>. BVision.AI reserves the right to suspend or terminate access to the Services for any violation of this AUP, with or without notice.</p>
+
+            <h3>5. Enforcement</h3>
+            <p>BVision.AI reserves the right to monitor usage of the Services for violations of this AUP and applicable law. We may remove content, suspend accounts, or terminate service in cases of confirmed violations. BVision.AI cooperates with law enforcement in cases of illegal activity.</p>
+          </div>
+        </div>
+
+
+        <!-- ── DORA ──────────────────────────────────────────── -->
+        <div class="legal-doc" id="dora">
+          <div class="legal-doc-header">
+            <div class="legal-doc-tag">DORA</div>
+            <h2 class="t-h2" style="color: var(--text-1);">Financial Services Industry Addendum (DORA)</h2>
+            <p class="legal-doc-date">Last updated: February 12, 2026</p>
+          </div>
+          <div class="legal-body">
+            <p>This Financial Services Industry Addendum ("<strong>DORA Addendum</strong>") supplements the MSA and applies to Customers that are "financial entities" as defined under Regulation (EU) 2022/2554 ("<strong>DORA</strong>") — the EU Digital Operational Resilience Act — and any equivalent national implementing legislation.</p>
+
+            <h3>1. DORA Compliance</h3>
+            <p>BVision.AI acknowledges its role as an ICT third-party service provider under DORA where applicable. BVision.AI supports Customer's compliance with DORA by:</p>
+            <ul>
+              <li>Providing a contractual framework consistent with DORA Article 30 requirements</li>
+              <li>Maintaining and sharing documentation of its ICT security policies and risk management framework</li>
+              <li>Providing access to audit rights and information necessary for Customer's due diligence obligations</li>
+              <li>Notifying Customer of material ICT-related incidents that could affect the Services</li>
+            </ul>
+
+            <h3>2. ICT Risk Management</h3>
+            <p>BVision.AI maintains an ICT risk management framework that includes: (i) identification and classification of ICT assets; (ii) continuous vulnerability assessment and penetration testing; (iii) incident detection, response, and recovery procedures; (iv) business continuity and disaster recovery plans with documented RPO and RTO targets; and (v) regular testing of resilience measures.</p>
+
+            <h3>3. Incident Reporting</h3>
+            <p>In the event of a major ICT-related incident as defined under DORA that affects the Services provided to Customer, BVision.AI shall: (i) notify Customer within 2 hours of declaring the incident; (ii) provide an initial incident report within 24 hours; (iii) provide a final incident report within 1 month; and (iv) cooperate with Customer's regulatory reporting obligations to national competent authorities.</p>
+
+            <h3>4. Sub-contractor Oversight</h3>
+            <p>BVision.AI imposes DORA-equivalent ICT risk management obligations on critical sub-contractors and provides Customer with information on sub-contractors necessary for Customer's supply chain risk assessments, upon request.</p>
+
+            <h3>5. Audit Rights</h3>
+            <p>Customer (or its designated auditor) may conduct audits of BVision.AI's ICT systems and security controls relevant to the Services no more than once per calendar year, upon 30 days' notice, and in a manner that does not unreasonably disrupt BVision.AI's operations. BVision.AI shall cooperate fully and provide relevant documentation.</p>
+
+            <h3>6. Data Localization</h3>
+            <p>Upon Customer's request and where technically feasible, BVision.AI shall support data localization requirements within the EEA to facilitate Customer's compliance with DORA and applicable national regulations. Additional charges may apply for non-standard data localization requirements.</p>
+
+            <h3>7. Governing Law for DORA Addendum</h3>
+            <p>This DORA Addendum shall be governed by the laws of the European Union and the member state in which Customer's regulated entity is established, to the extent required by DORA.</p>
+
+            <p>For questions regarding DORA compliance, contact <a href="mailto:compliance@bvision.ai">compliance@bvision.ai</a>.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ FOOTER ════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><a href="index.html" class="footer-brand">bvision.ai</a><p class="footer-desc">Enterprise-grade AI agents for your most complex workflows. Live in days. Governed from day one.</p></div>
+      <div><p class="footer-col-title">Industries</p><ul class="footer-links"><li><a href="industries.html#financial">Financial Services</a></li><li><a href="industries.html#healthcare">Healthcare</a></li><li><a href="industries.html#retail">Retail</a></li><li><a href="industries.html#telecom">Telecom</a></li></ul></div>
+      <div><p class="footer-col-title">Product</p><ul class="footer-links"><li><a href="platform.html">Overview</a></li><li><a href="platform.html#build">Build</a></li><li><a href="platform.html#monitor">Monitor</a></li><li><a href="platform.html#optimize">Optimize</a></li></ul></div>
+      <div><p class="footer-col-title">Company</p><ul class="footer-links"><li><a href="#">About us</a></li><li><a href="#">Blog</a></li><li><a href="#">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><p class="footer-col-title">Legal</p><ul class="footer-links"><li><a href="legal.html">Legal Policies</a></li><li><a href="privacy.html">Privacy Policy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span class="footer-copy">&copy; 2026 BVision.AI, Inc.</span></div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  // Highlight active section in sidebar
+  const headings = document.querySelectorAll('.legal-doc');
+  const navLinks = document.querySelectorAll('.legal-nav-links a[href^="#"]');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        const link = document.querySelector(`.legal-nav-links a[href="#${e.target.id}"]`);
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-10% 0px -70% 0px' });
+  headings.forEach(h => io.observe(h));
+</script>
+</body>
+</html>
