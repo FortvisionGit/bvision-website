@@ -113,6 +113,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: var(--text-1);
       font-weight: 500;
     }
+    .privacy-section code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.8125em;
+      color: var(--text-1);
+      background: var(--bg);
+      padding: 1px 5px;
+      border-radius: 3px;
+      word-break: break-all;
+    }
     .privacy-summary-box {
       padding: 16px 20px;
       background: var(--bg);
@@ -233,6 +242,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="#s11">11. Do Not Track</a>
           <a href="#s12">12. Changes to this policy</a>
           <a href="#s13">13. Contact us</a>
+          <a href="#s14">14. Google API Services</a>
         </nav>
         <div style="margin-top: 24px; padding: 14px 16px; background: var(--bg); border-radius: var(--radius-sm); border: 1px solid var(--border);">
           <p style="font-size: 0.75rem; color: var(--text-2); line-height: 1.6; margin-bottom: 8px;">Privacy questions?</p>
@@ -472,6 +482,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="margin-top: 24px; padding: 16px 20px; background: var(--bg); border-radius: var(--radius-sm); border: 1px solid var(--border);">
             <p style="font-size: 0.8rem; color: var(--text-2); margin-bottom: 0; line-height: 1.6;">You also have the right to lodge a complaint with your local data protection supervisory authority at any time. In the EU, this is typically your national Data Protection Authority (DPA). In the UK, this is the Information Commissioner's Office (ICO) at <a href="https://ico.org.uk" target="_blank" rel="noopener">ico.org.uk</a>. In Israel, this is the Privacy Protection Authority at <a href="https://www.gov.il/en/departments/the_privacy_protection_authority" target="_blank" rel="noopener">gov.il</a>.</p>
           </div>
+        </div>
+
+        <!-- S14 -->
+        <div class="privacy-section" id="s14">
+          <div class="privacy-section-num">14</div>
+          <h2>Google API Services and Limited Use</h2>
+          <div class="privacy-summary-box"><p>Where a client connects a Google account to BVision, our use of the data we receive from Google APIs complies with the Google API Services User Data Policy, including its Limited Use requirements. Google user data is never used to train AI models.</p></div>
+
+          <p>BVision's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes" target="_blank" rel="noopener">Limited Use</a> requirements.</p>
+
+          <h3>When this applies</h3>
+          <p>This section applies only where a business using BVision chooses to connect its own Google Calendar so that appointments booked through its assistant are written into its calendar. The connection is optional, is always made by the business to its own Google account, and can be removed at any time. We never ask an end customer to connect a Google account.</p>
+
+          <h3>What we request, and why</h3>
+          <ul>
+            <li><strong>Google Calendar events</strong> (<code>calendar.events</code>) &mdash; to write a confirmed appointment into the business's calendar, to delete that event if the customer cancels, and to read existing events so that an hour already committed is never offered as free.</li>
+            <li><strong>Calendar list, read only</strong> (<code>calendar.calendarlist.readonly</code>) &mdash; to list the calendars the connected account can write to, so the business can choose which one receives its appointments. This grants no access to any event.</li>
+          </ul>
+
+          <h3>What we read, and what we discard</h3>
+          <p>When we read a calendar to work out availability, we reduce every event to a start time, an end time and whether it counts as busy, at the moment we parse Google's response. Event titles, descriptions, attendees, guest email addresses, locations, organizers, conference links and attachments are never stored, never logged and never retained. The only fact we derive from a calendar entry is that an interval is occupied.</p>
+
+          <h3>Artificial intelligence and machine learning</h3>
+          <p>BVision uses a third-party large language model (the OpenAI API) to generate the assistant's replies. Google user data is <strong>not</strong> passed to it. The model is given only the list of times that are <em>free</em> &mdash; the complement of the calendar's contents &mdash; as plain time labels alongside the service being booked.</p>
+          <p>We do not use, transfer or sell Google user data &mdash; whether raw, aggregated, anonymized or derived &mdash; to create, train, fine-tune or improve any foundational or generalized machine learning or artificial intelligence model, whether our own or a third party's. We have not enrolled our OpenAI organization in any data-sharing or model-improvement program.</p>
+
+          <h3>Storage and withdrawal of access</h3>
+          <p>We store only the long-lived authorization token Google issues, together with the identifier and name of the calendar the business selected. We do not store copies of calendar events.</p>
+          <p>A business can end the connection at any time using the "Disconnect" button in Settings &gt; Booking. Doing so hands the authorization back to Google and deletes the stored token, so neither we nor anyone else can use it again. Access can equally be withdrawn from <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>, and either route immediately and permanently ends our ability to read or write that calendar.</p>
+
+          <p>Questions about this section can be sent to <a href="mailto:privacy@bvision.ai">privacy@bvision.ai</a>.</p>
         </div>
 
       </div>
